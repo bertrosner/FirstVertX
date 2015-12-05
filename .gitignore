@@ -1,10 +1,34 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
+# Created by .gitignore support plugin (hsz.mobi)
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
+## Directory-based project format
+.idea/
+/*.iml
 
+## File-based project format
+*.ipr
+*.iws
+
+## Additional for IntelliJ
+out/
+
+target/
+
+#java specific
+*.class
+
+#netbeans ignore personal stuff 
+nbproject/private/
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+#Eclipse
+.settings/
+.classpath
+.project
