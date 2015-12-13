@@ -22,11 +22,11 @@ public class FirstWebVerticle extends AbstractVerticle
         router.route().handler(BodyHandler.create());
 
         router.get("/").handler(this::handleRoot);
-        router.get("/m_products/:productID").handler(this::handleGetProduct);
-        router.put("/m_products/:productID").handler(this::handleAddProduct);
-        router.delete("/m_products/:productID").handler(this::handleDeleteProduct);
-        router.post("/m_products/:productID").handler(this::handlePostProduct);
-        router.get("/m_products").handler(this::handleListProducts);
+        router.get("/products/:productID").handler(this::handleGetProduct);
+        router.put("/products/:productID").handler(this::handleAddProduct);
+        router.delete("/products/:productID").handler(this::handleDeleteProduct);
+        router.post("/products/:productID").handler(this::handlePostProduct);
+        router.get("/products").handler(this::handleListProducts);
 
         vertx.createHttpServer().requestHandler(router::accept).listen(8080);
     }
